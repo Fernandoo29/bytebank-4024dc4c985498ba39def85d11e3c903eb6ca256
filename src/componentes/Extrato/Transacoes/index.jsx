@@ -3,6 +3,7 @@ import React from 'react';
 export default function Transacoes({ transacao, estilos }) {
   return (
     <li>
+      {console.log(transacao)}
       <p className={estilos.mes}>{transacao.mes}</p>
       <div className={estilos.transacao}>
         <p data-testid="tipoTransacao">{transacao.transacao}</p>
